@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Like and Dislike Buttons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px;
+            width: 100px;
+        }
+
+        .like {
+            background-color: #008000;
+        }
+
+        .dislike {
+            background-color: #ff0000;
+        }
+
+        .counter {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Do you like this page?</h1>
+    <div>
+        <button class="button like" onclick="like()">&#128077; <span id="likeCount">0</span></button>
+        <button class="button dislike" onclick="dislike()">&#128078; <span id="dislikeCount">0</span></button>
+    </div>
+    <div class="counter">
+       Likes: <span id="totalLikes">0</span> | Dislikes: <span id="totalDislikes">0</span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
